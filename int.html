@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alpha Team</title>
+  <link rel="icon" type="image/png" href="peace.jpg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+      background-color: #fff;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 5px solid #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: border-pulse 2s infinite;
+    }
+
+    .team-member h2 {
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .team-member p {
+      margin: 5px 0;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @keyframes border-pulse {
+      0% {
+        border-color: #fff;
+        transform: scale(1);
+      }
+      50% {
+        border-color: #000080;
+        transform: scale(1.1);
+      }
+      100% {
+        border-color: #fff;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Animation for team member elements */
+    .team-member:nth-child(odd) {
+      animation: slide-in 0.8s ease-out;
+    }
+
+    .team-member:nth-child(even) {
+      animation: slide-in 0.8s ease-out 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meet Our Team</h1>
+  </header>
+
+  <div class="team">
+    <div class="team-member" style="background-color: lightskyblue;">
+      <img src="mak.jpg" alt="Team Member 1">
+      <h2 style="color: black;">Simhadri Mani Anil Kumar</h2>
+      <p style="color: black;">CSE, ADITYA ENGINEERING COLLEGE</p>
+      <p style="color: black;">Intern@Brainovision</p>
+    </div>
+
+    <div class="team-member" style="background-color: lightskyblue;">
+      <img src="mkr.jpg" alt="Team Member 2">
+      <h2 style="color: black;">U Mani Kumar Reddy</h2>
+      <p style="color: black;">AIML,ADITYA ENGINEERING COLLEGE</p>
+      <p style="color: black;">Intern@Brainovision</p>
+    </div>
+
+    <div class="team-member" style="background-color: lightskyblue;">
+      <img src="prasanna.jpg" alt="Team Member 3">
+      <h2 style="color: black;">Peketi Moulika Prasanna</h2>
+      <p style="color: black;">CSE, ADITYA ENGINEERING COLLEGE</p>
+      <p style="color: black;">Intern@Brainovision</p>
+    </div>
+
+    <div class="team-member" style="background-color: lightskyblue;">
+      <img src="maruthi.jpg" alt="Team Member 4">
+      <h2 style="color: black;">Maruthi Veera Shanmukh Merla</h2>
+      <p style="color: black;">IT,ADITYA ENGINEERING COLLEGE</p>
+      <p style="color: black;">Intern@Brainovision</p>
+    </div>
+
+    <div class="team-member" style="background-color: lightskyblue;">
+      <img src="manoj.jpg" alt="Team Member 5">
+      <h2 style="color: black;">Dasari Mohan Manoj</h2>
+      <p style="color: black;">CSE, ADITYA ENGINEERING COLLEGE</p>
+      <p style="color: black;">Intern@Brainovision</p>
+    </div>
+
+    <div class="team-member" style="background-color: lightskyblue;">
+      <img src="blank.jpg" alt="Team Member 6">
+      <h2 style="color: black;">Mogali Sai Priya</h2>
+      <p style="color: black;">CSE, ADITYA ENGINEERING COLLEGE</p>
+      <p style="color: black;">Intern@Brainovision</p>
+    </div>
+  </div>
+</body>
+</html>
